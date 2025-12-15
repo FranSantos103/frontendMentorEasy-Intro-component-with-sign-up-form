@@ -1,44 +1,20 @@
-# Frontend Mentor - Intro component with sign-up form
+let firstNameElement = document.getElementById('firstName')
+let lastNameElement = document.getElementById('lastName')
+let cantBeEmptyFirstName = document.getElementById('cantBeEmptyFirstName')
+let button = document.getElementById('button')
+let iconError = document.getElementById('iconError')
+let cantBeEmptyLastName = document.getElementById('cantBeEmptyLastName')
+let iconError2 = document.getElementById('iconError2')
+let email = document.getElementById('email')
+let iconError3 = document.getElementById('iconError3')
+let cantBeEmptyEmail = document.getElementById('cantBeEmptyEmail')
+let password = document.getElementById('password')
+let iconError4 = document.getElementById('iconError4')
+let cantBeEmptyPassword = document.getElementById('cantBeEmptyPassword')
 
-This is a solution to the [Intro component with sign-up form on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1).  
-Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+const invalidChars = [' ', ',', '"', "'", '/', '\\']
 
----
-
-## 📸 Screenshot
-
-![Screenshot of my solution](./preview.png)
-
----
-
-## 🔗 Links
-
-- **Solution URL:** [](#)
-- **Live Site URL:** [](#)
-
----
-
-## 💻 My process
-
-### Built with
-- Semantic **HTML5** markup  
-- **CSS3** (Flexbox, custom fonts)  
-- Responsive design principles  
-
----
-
-## 🧠 What I learned
-
-While working on this project, I reinforced my understanding of:
-- Using **semantic HTML** (`<main>`)
-- Creating **centered layouts** with Flexbox  
-- Designing **consistent color palettes**
-
-Here’s a little code snippet I’m proud of:
-
-input:focus {
-  outline: 1px solid #7792cc;
-}
+button.addEventListener('click', enviar)
 
 
 function enviar(){
