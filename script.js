@@ -30,20 +30,25 @@ function enviar(){
     iconError.style.display = 'block'
     firstNameElement.style.border = '2px solid #e08d90ff'
     firstNameElement.classList.add('error')
+    firstNameElement.style.outline = 'none'
+
     }else{
     cantBeEmptyFirstName.style.display = 'none'
     iconError.style.display = 'none'
     firstNameElement.style.border = '1px solid gray'
+    firstNameElement.style.outline = 'none'
 }   
     if(lastNameElement.value === ""){
     cantBeEmptyLastName.style.display = 'block'
     iconError2.style.display = 'block'
     lastNameElement.style.border = '2px solid #e08d90ff'
     lastNameElement.classList.add('error')
+    lastNameElement.style.outline = 'none'
     }else{
     cantBeEmptyLastName.style.display = 'none'
     iconError2.style.display = 'none'
     lastNameElement.style.border = '1px solid gray'
+    lastNameElement.style.outline = 'none'
 }   
 
     if(email.value === "" || containsOrDoesntContain === true){
@@ -53,12 +58,14 @@ function enviar(){
     email.style.color = '#e08d90ff'
     email.style.fontWeight = 'bold'
     email.classList.add('error')
+    email.style.outline = 'none'
    }else{
     cantBeEmptyEmail.style.display = 'none'
     iconError3.style.display = 'none'
     email.style.border = '1px solid gray'
     email.style.color = 'black'
     email.style.fontWeight = 'normal'
+    email.style.outline = 'none'
 }
 
     if(password.value === ""){
@@ -66,10 +73,14 @@ function enviar(){
     iconError4.style.display = 'block'
     password.style.border = '2px solid #e08d90ff'
     password.classList.add('error')
+    password.style.outline = 'none'
+
     }else{
     cantBeEmptyPassword.style.display = 'none'
     iconError4.style.display = 'none'
     password.style.border = '1px solid gray'
+    password.style.outline = 'none'
+    
 }
 
 }
